@@ -1,0 +1,135 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #F0F0ED;
+    font-family: 'SolaimanLipi', sans-serif;
+
+}
+.container-x{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+.imcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+.max-wid{
+   max-width: 600px;
+}
+.max-con{
+   max-width: 900px;
+}
+.fixed-nav-bar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  
+}
+.parent-d{
+  position: relative;
+  
+}
+.child-p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* height: 100%; */
+  width: 100%;
+  z-index: 1;
+  color: white;
+  
+}
+.overlay-span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+/* .span-p{
+   position: relative;
+}
+.p-child{
+   position: absolute;
+   bottom: 0px;
+   left: 0;
+   height: 100%;
+   width: 100%;
+} */
+.main-nav{
+   position: relative;
+}
+.mobile{
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 0;
+   /* overflow: hidden; */
+   transition: 0.5s all linear;
+}
+.mobile-2{
+     position: fixed;       
+}
+.mobile-width{
+  width: 200px;
+  
+}
+.menu{
+   position: relative;
+}
+.submenu{
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 100px;
+  background-color: white;
+  display: none;
+  z-index: 999;
+}
+.menu:hover .submenu{
+  transition: 0.5s;
+  display: block;
+}
+.menu-main{
+   position: relative;
+}
+.submenu-main{
+   position: absolute;
+   top: 40px;
+   left: 0;
+   width: 100px;
+   display: none;
+   background-color: white;
+}
+.menu-main:hover .submenu-main{
+   transition: 0.5s;
+   display: block;
+   
+}
+
+.hideMe{
+   display: none;
+}
+
+@keyframes angle_anim{
+  0%{
+     transform: rotate(0deg);
+  }
+  100%{
+     transform: rotate(90deg);
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+   .main-n{
+     display: none;
+   }
+}
